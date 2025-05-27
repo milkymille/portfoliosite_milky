@@ -74,7 +74,6 @@ body.fade-out {
 }
 
 
-/* 全画面にローディング画面 */
 
 
 
@@ -2247,7 +2246,10 @@ button {
 
 .hamburger_wrap{
   position: fixed;
-  z-index: 9000;
+  z-index: 99999999 !important; 
+  top:20px;
+  right: 30px;
+  overflow: visible;
 }
 
   .hamburger {
@@ -2256,13 +2258,11 @@ button {
     border: 1px solid #9ec6c8;
     border-radius: 50%;
     display: flex;
+    position: relative;
     justify-content: center;
+    z-index: 999999 !important; 
     align-items: center;
-    position: fixed;
     cursor: pointer;
-    z-index: 9999; 
-    top:20px;
-    right: 30px;
     
   }
   
@@ -2272,6 +2272,7 @@ button {
     height: 1px;
     background: #9ec6c8;
     transition: all 0.3s ease;
+    z-index: 9999999;
   }
   
  
@@ -2356,7 +2357,7 @@ button {
 
   
 .sp-nav{
-  position:absolute;
+  position:fixed;
   top:0;
   left:0;
   height:100vh;
@@ -2367,6 +2368,7 @@ button {
   transform: rotate(90deg);
   display: block;
   opacity: 0;
+  z-index: 5000;
 }
 
 
@@ -2400,11 +2402,21 @@ button {
   justify-content: flex-end;
   align-items: center;
   gap: 40px;
-  margin-right:30px;
   position: absolute;
   bottom: 10%;
   right: 30px;
 }
+
+
+.finduson_ham{
+  width: 76px;
+}
+
+.instaicon_ham{
+  width: 62px;
+
+}
+
 }
 
 
