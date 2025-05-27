@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>送信完了</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body class="subpage">
+        <header class="header" id="header">
+            <div class="header-wrap">
+                <a href="index.html">
+                    <h1 class="logo_blue">
+                        <img
+                            src="Photo/logo_blue.png"
+                            alt="Mill Designのロゴ"
+                        /></h1
+                ></a>
+                <nav class="pc-nav">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="index.html#CONCEPT">CONCEPT</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="skills.html">SKILLS</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="works.html">WORKS</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+                <nav class="sp-nav">
+                    <ul>
+                        <li><a href="index.html#CONCEPT">CONCEPT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="works.html">WORKS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="thanks">
+            <h2 class="thanks_word fade-in">
+                <img src="Photo/thanks@2x.png" alt="thanks" />
+            </h2>
+            <h2 class="thanks_word_sp fade-in">
+                <img src="Photo/thankyou_sp@2x.png" alt="thanks" />
+            </h2>
+            <div class="thanks_warp">
+                <p class="thanks_sentece1 fade-in">
+                    お問い合わせ<span class="br-sp"></span
+                    >ありがとうございます。
+                </p>
+
+                <p class="thanks_sentece2 fade-in">
+                    お送り頂きました内容を確認の上、5営業日以内に折り返しご連絡させて頂きます。<br /><br />
+                    しばらく経ってもメールが届かない場合は、入力頂いたメールアドレスが間違っているか、<br />
+                    迷惑メールフォルダに振り分けられている可能性がございます。<br /><br />
+                    以上の内容をご確認の上、お手数ですがもう一度フォームよりお問い合わせ頂きますよう<br />お願い申し上げます。
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer-pc">
+            <div class="footer-inner">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html#header">TOP</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="works.html">WORKS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-right">
+                    <div class="finduson">
+                        <img src="Photo/FINDUSON@2x.png" alt="finduson" />
+                    </div>
+                    <a
+                        href="https://www.instagram.com/mi.ll_design?igsh=MWFrcW43bm9heGhxdw&utm_source=qr"
+                    >
+                        <img
+                            src="Photo/instagram@2x.png"
+                            alt="Instagramアイコン"
+                            class="instaicon"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-left">© 2025 MILKY</div>
+        </footer>
+
+        <footer class="footer-sp">
+            <div class="footer-inner_sp">
+                <nav class="footer_nav-sp">
+                    <ul>
+                        <li><a href="index.html#header">TOP</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="works.html">WORKS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-right_nav-sp">
+                    <div class="finduson">
+                        <img src="Photo/FINDUSON@2x.png" alt="finduson" />
+                    </div>
+                    <a
+                        href="https://www.instagram.com/mi.ll_design?igsh=MWFrcW43bm9heGhxdw&utm_source=qr"
+                    >
+                        <img
+                            src="Photo/instagram@2x.png"
+                            alt="Instagramアイコン"
+                            class="instaicon"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-left_nav-sp">© 2025 MILKY</div>
+        </footer>
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "chk7drm",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "chk7drm",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $(".hamburger").on("click", function () {
+                    $(this).toggleClass("active");
+                    $(".sp-nav").toggleClass("active");
+                });
+            });
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mill Design portfolio site</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body class="subpage">
+        <header class="header" id="header">
+            <div class="header-wrap">
+                <a href="index.html">
+                    <h1 class="logo_blue">
+                        <img
+                            src="Photo/logo_blue.png"
+                            alt="Mill Designのロゴ"
+                        /></h1
+                ></a>
+                <nav class="pc-nav">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="index.html#CONCEPT">CONCEPT</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="skills.html">SKILLS</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="works.html">WORKS</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+                <nav class="sp-nav">
+                    <ul>
+                        <li><a href="index.html#CONCEPT">CONCEPT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="works.html">WORKS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="contact2">
+            <h2 class="contact_word_img fade-in">
+                <img src="Photo/contact@2x.png" alt="CONTACT" />
+            </h2>
+            <p class="contact_sentece fade-in">
+                ご質問、ご相談等ございましたら、<span class="br-sp"></span
+                >どうぞお気軽にお問い合わせください。
+            </p>
+            <div class="contact_warp fade-in">
+                <form
+                    action=" https://docs.google.com/forms/u/1/d/1cQ2yJtE0z6u7kzo3E7nvb_entfxQN12hzr3WR4b4SPM/previewResponse"
+                    method="post"
+                    target="hidden_iframe"
+                    onsubmit="submitted=true;"
+                >
+                    <div class="form_item">
+                        <div class="label">
+                            <label for="name">氏名</label>
+                        </div>
+                        <input
+                            type="text"
+                            id="name"
+                            name="entry.20446268"
+                            placeholder="氏名"
+                            required
+                        />
+                    </div>
+                    <div class="form_item">
+                        <div class="label">
+                            <label for="name_kana">フリガナ</label>
+                        </div>
+                        <input
+                            type="text"
+                            id="name_kana"
+                            name="entry.2052826256"
+                            placeholder="フリガナ"
+                            required
+                        />
+                    </div>
+                    <div class="form_item">
+                        <div class="label">
+                            <label for="question">種別</label>
+                        </div>
+                        <select id="question" name="entry.1223647708" required>
+                            <option value="" disabled selected>
+                                選択してください
+                            </option>
+                            <option value="問い合わせ">問い合わせ</option>
+                            <option value="依頼">依頼</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                    <div class="form_item">
+                        <div class="label">
+                            <label for="email">メールアドレス</label>
+                        </div>
+                        <input
+                            type="email"
+                            id="email"
+                            name="entry.1383788165"
+                            placeholder="メールアドレス"
+                            required
+                        />
+                    </div>
+                    <div class="form_item2">
+                        <div class="label">
+                            <label for="inquiry">お問い合わせ内容</label>
+                        </div>
+                        <textarea
+                            id="inquiry"
+                            name="entry.578840844"
+                            placeholder="問い合わせ内容入力"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form_send">
+                        <button type="submit">
+                            <img src="Photo/send@2x.png" alt="sendアイコン" />
+                        </button>
+                    </div>
+                </form>
+                <script type="text/javascript">
+                    var submitted = false;
+                </script>
+                <iframe
+                    name="hidden_iframe"
+                    id="hidden_iframe"
+                    style="display: none"
+                    onload="if(submitted)  {window.location='thanks.html';}"
+                ></iframe>
+            </div>
+        </section>
+
+        <footer class="footer-pc">
+            <div class="footer-inner">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html#header">TOP</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="works.html">WORKS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-right">
+                    <div class="finduson">
+                        <img src="Photo/FINDUSON@2x.png" alt="FINDUSON" />
+                    </div>
+                    <a
+                        href="https://www.instagram.com/mi.ll_design?igsh=MWFrcW43bm9heGhxdw&utm_source=qr"
+                    >
+                        <img
+                            src="Photo/instagram@2x.png"
+                            alt="Instagramアイコン"
+                            class="instaicon"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-left">© 2025 MILKY</div>
+        </footer>
+
+        <footer class="footer-sp">
+            <div class="footer-inner_sp">
+                <nav class="footer_nav-sp">
+                    <ul>
+                        <li><a href="index.html#header">TOP</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="works.html">WORKS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-right_nav-sp">
+                    <div class="finduson">
+                        <img src="Photo/FINDUSON@2x.png" alt="FINDUSON" />
+                    </div>
+                    <a
+                        href="https://www.instagram.com/mi.ll_design?igsh=MWFrcW43bm9heGhxdw&utm_source=qr"
+                    >
+                        <img
+                            src="Photo/instagram@2x.png"
+                            alt="Instagramアイコン"
+                            class="instaicon"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-left_nav-sp">© 2025 MILKY</div>
+        </footer>
+
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "chk7drm",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "chk7drm",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script> -->
+
+        <script>
+            $(document).ready(function () {
+                $(".hamburger").on("click", function () {
+                    $(this).toggleClass("active");
+                    $(".sp-nav").toggleClass("active");
+                });
+            });
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

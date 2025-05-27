@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mill Design portfolio site</title>
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Slick JS -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+        ></script>
+        <link
+            href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
+            rel="stylesheet"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <!-- Slick CSS -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="header-wrap">
+                <a href="#header">
+                    <h1 class="logo" id="TOP">
+                        <img
+                            src="Photo/logo_white.png"
+                            alt="Mill Designのロゴ"
+                            class="pc"
+                        />
+                    </h1>
+                </a>
+                <nav class="pc-nav">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="#CONCEPT">CONCEPT</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="skills.html">SKILLS</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="works.html">WORKS</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="sp-nav">
+                    <div class="sp-nav_ham">
+                        <ul>
+                            <li><a href="index.html#CONCEPT">CONCEPT</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="skills.html">SKILLS</a></li>
+                            <li><a href="works.html">WORKS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="ham_insta">
+                        <div class="finduson_ham">
+                            <img src="Photo/FINDUSON@2x.png" alt="FINDUSON" />
+                        </div>
+                        <a
+                            href="https://www.instagram.com/mi.ll_design?igsh=MWFrcW43bm9heGhxdw&utm_source=qr"
+                        >
+                            <div class="instaicon_ham">
+                                <img
+                                    src="Photo/instagram_word@2x.png"
+                                    alt="Instagramアイコン"
+                                /></div
+                        ></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="header_photo">
+                <picture>
+                    <source
+                        srcset="Photo/header.png"
+                        media="(max-width: 767px)"
+                    />
+                    <img src="Photo/header.png" alt="海の写真" />
+                </picture>
+
+                <div class="word">
+                    <img
+                        src="Photo/moveword.gif"
+                        alt="心に届ける想いをカタチに"
+                    />
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="concept" id="CONCEPT">
+                <h2 class="concept_word_img fade-in">
+                    <img src="Photo/Concept.png" alt="CONCEPT" />
+                </h2>
+
+                <p class="concept_word fade-in">
+                    私は美容師として、人が本来持っている美しさに寄り添い、その魅力を引き出してきました<br />
+                    デザインにおいても、その想いは同じです<br />
+                    クライアント様の想いに寄り添い、ともに歩みながら、その人だけの“らしさ”を<br />
+                    丁寧にカタチにしていきます<br /><br />
+                    海が空の色を映して、さまざまな表情を見せるように<br />
+                    私のデザインも、お客様一人ひとりの想いを映しながら、その魅力を引き立てる存在でありたい<br />
+                    空のように自由に、海のように深く<br /><br />
+                    ────あなたらしい魅力を、あなたらしいカタチで表現するデザインを────<br /><br />
+                    そんな想いを乗せてポートフォリオを作成いたしました
+                </p>
+            </section>
+
+            <section class="about" id="ABOUT">
+                <h2 class="about_word_img fade-in">
+                    <img src="Photo/ABOUT.png" alt="ABOUT" />
+                </h2>
+                <div class="about_img">
+                    <div class="about_img1">
+                        <img
+                            src="Photo/about1.png"
+                            alt="プロフィール写真バス停"
+                        />
+                    </div>
+                    <div class="about_img2">
+                        <img src="Photo/about2.png" alt="プロフィール写真海" />
+                    </div>
+                    <div class="about_img3_wrapper">
+                        <div class="about_img3">
+                            <img
+                                src="Photo/about3.png"
+                                alt="プロフィール写真麦わら帽子"
+                            />
+                        </div>
+                        <div class="about_img4">
+                            <img
+                                src="Photo/about_img4.png"
+                                alt="ABOUT_輪っか"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <p class="about_sentence fade-in">
+                    現在働いている会社で制作物を任された際、デザインの楽しさと面白さ、難しさを知りもっと専門的な知識を身につけたいと勉強を決意し、Webデザインやコーディングについて学ぼうと決意しました！
+                </p>
+
+                <div class="view_more_about_wrap">
+                    <a href="about.html" class="scroll_area_viewmore">
+                        <div class="view_more_content">
+                            <div class="view_more_word">
+                                <img
+                                    src="Photo/viwemoreset@2x.png"
+                                    alt="view more"
+                                />
+                            </div>
+                            <div class="view_more_yazirushi">
+                                <img
+                                    src="Photo/viwemoreyazirushi@2x.png"
+                                    alt="view more"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="skills" id="SKILLS">
+                <h2 class="skills_word_img fade-in">
+                    <img src="Photo/SLKILLS.png" alt="SKILLS" />
+                </h2>
+
+                <div class="skills_photo_wrap">
+                    <div class="skills_list">
+                        <p class="skills_photo">
+                            <img
+                                src="Photo/graphic.png"
+                                alt="グラフィックアイコン"
+                                class="bounce-image"
+                            />
+                        </p>
+                    </div>
+                    <div class="skills_photo_list">
+                        <p class="skills_photo">
+                            <img
+                                src="Photo/web.png"
+                                alt="Webデザインアイコン"
+                                class="bounce-image"
+                            />
+                        </p>
+                    </div>
+                    <div class="skills_photo_list">
+                        <p class="skills_photo">
+                            <img
+                                src="Photo/coding.png"
+                                alt="コーディングアイコン"
+                                class="bounce-image"
+                            />
+                        </p>
+                    </div>
+                </div>
+
+                <!-- スマホ版：カルーセル -->
+                <div class="skills_sp">
+                    <ul class="skills-slider">
+                        <li>
+                            <img
+                                src="Photo/graphic.png"
+                                alt="グラフィックアイコン"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="Photo/web.png"
+                                alt="webデザインアイコン"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="Photo/coding.png"
+                                alt="コーディングアイコン"
+                            />
+                        </li>
+                    </ul>
+                    <div class="custom-prev">
+                        <img src="Photo/yazirushi3@2x.png" alt="戻る矢印" />
+                    </div>
+                    <div class="custom-next">
+                        <img src="Photo/yazirushi4@2x.png" alt="次へ矢印" />
+                    </div>
+                </div>
+
+                <div class="view_more_skills">
+                    <a href="skills.html" class="scroll_area_viewmore">
+                        <div class="view_more_content">
+                            <div class="view_more_word">
+                                <img
+                                    src="Photo/viwemoreset@2x.png"
+                                    alt="view more"
+                                />
+                            </div>
+                            <div class="view_more_yazirushi">
+                                <img
+                                    src="Photo/viwemoreyazirushi@2x.png"
+                                    alt="view more"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="works" id="WORKS">
+                <h2 class="works_word_img fade-in">
+                    <img src="Photo/works.png" alt="WORKS" />
+                </h2>
+
+                <!-- PC版ギャラリー -->
+
+                <div class="carousel_inner">
+                    <div class="carousel_item">
+                        <a
+                            href="works_hamburger_pop.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="ハンバーガーバナー"
+                            class="image-overlay-wrapper"
+                        >
+                            <img
+                                src="Photo/hamburger_POP@2x.png"
+                                class="img-gallery"
+                                alt="ハンバーガーポップバナー"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    激旨バーガー新発売<br />BANNER/Design
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel_item">
+                        <a
+                            href="works_hamburger_black.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="ハンバーガーバナー"
+                            class="image-overlay-wrapper"
+                        >
+                            <img
+                                src="Photo/hamburger_1@2x.png"
+                                class="img-gallery"
+                                alt="ハンバーガー高級感バナー"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    激旨バーガー新発売<br />BANNER/Design
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel_item">
+                        <a
+                            href="works_ice_banner.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="アイスバナー"
+                            class="image-overlay-wrapper"
+                        >
+                            <img
+                                src="Photo/ice@2x.png"
+                                class="img-gallery"
+                                alt="アイスクリームバナー"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    アイスクリーム<br />BANNER/Design
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="carousel_item">
+                        <a
+                            href="works_salon_LP.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="美容室LP"
+                        >
+                            <img
+                                src="Photo/salonLP@2x.png"
+                                class="img-gallery"
+                                alt="美容室ランディングページ"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    美容室<br />Web Site/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_haircare_LP.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="ヘアケアLP"
+                        >
+                            <img
+                                src="Photo/haircare@2x.png"
+                                class="img-gallery"
+                                alt="シャンプーストアーランディングページ"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    ヘアケアブランド<br />Landing page/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_design_cafe.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="カフェ"
+                        >
+                            <img
+                                src="Photo/cafe@2x.png"
+                                class="img-gallery"
+                                alt="デザインカフェランディングページ"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    カフェ<br />Web Site/コーディング
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_Sp_banner.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="スマホバナー"
+                        >
+                            <img
+                                src="Photo/sp@2x.png"
+                                class="img-gallery"
+                                alt="スマホキャンペーンバナー"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    携帯学割プラン<br />BANNER/Trace
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_workingspace_LP.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="コワーキング"
+                        >
+                            <img
+                                src="Photo/working@2x.png"
+                                class="img-gallery"
+                                alt="コワーキングスペースランディングページ"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    コワーキングスペース<br />Web Site/Trace
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_salon_flyer.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="flyer"
+                        >
+                            <img
+                                src="Photo/flyer@2x.png"
+                                class="img-gallery"
+                                alt="美容室オープニングキャンペーンフライヤー"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    美容室Opening Campaign<br />FLYER/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_satou.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="flyer"
+                        >
+                            <img
+                                src="Photo/satou@2x.png"
+                                class="img-gallery"
+                                alt="建設会社名刺ロゴデザイン"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    佐藤建設<br />BUSINESS CARD ＆ LOGO/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_ran.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="ショップカード"
+                        >
+                            <img
+                                src="Photo/RAN@2x.png"
+                                class="img-gallery"
+                                alt="カステラショップショップカードロゴデザイン"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    カステラショップ蘭<br />LSHOP CARD ＆
+                                    LOGO/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_hayashi.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="ショップカード"
+                        >
+                            <img
+                                src="Photo/HAYASHI@2x.png"
+                                class="img-gallery"
+                                alt="かりんとうショップショップカード"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    かりんとうショップ<br />SHOP CARD/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_omoni.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="メニュー表"
+                        >
+                            <img
+                                src="Photo/omoni_menu.png"
+                                class="img-gallery"
+                                alt="韓国料理屋メニュー表ロゴデザイン"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    韓国料理屋<br />MENU & LOGO/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_salon_recruit.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="フライヤー"
+                        >
+                            <img
+                                src="Photo/recruit_@2x.png"
+                                class="img-gallery"
+                                alt="美容室求人広告"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    美容室求人<br />FLYER/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_cafe_menu.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="カフェメニュー"
+                        >
+                            <img
+                                src="Photo/CAFEMENU@2x.png"
+                                class="img-gallery"
+                                alt="カフェメニュー"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    カフェ<br />MENU/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_ciel.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="shop Card"
+                        >
+                            <img
+                                src="Photo/ciel@2x.png"
+                                class="img-gallery"
+                                alt="ベーカリーショップショップカードロゴデザイン"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    ベーカリーショップ<br />SHOP CARD ＆
+                                    LOGO/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="carousel_item">
+                        <a
+                            href="works_recares.html"
+                            data-lightbox="carousel_item_big"
+                            data-title="美容室Logo"
+                        >
+                            <img
+                                src="Photo/SALON＿LOGO@2x.png"
+                                class="img-gallery"
+                                alt="美容室ロゴデザイン"
+                            />
+                            <div class="mask">
+                                <p class="overlay-text">
+                                    美容室<br />LOGO/Design
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                </div>
+
+                <div class="view_more_works">
+                    <a href="works.html" class="scroll_area_viewmore">
+                        <div class="view_more_content">
+                            <div class="view_more_word_works">
+                                <img
+                                    src="Photo/viwemoreset@2x.png"
+                                    alt="view more"
+                                />
+                                <div class="view_more_yazirushi">
+                                    <img
+                                        src="Photo/viwemoreyazirushi@2x.png"
+                                        alt="view more"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="contact" id="CONTACT">
+                <a href="contact.html">
+                    <div class="contact_photo_img">
+                        <div class="postcard">
+                            <img
+                                src="Photo/contactphoto@2x.png"
+                                alt="contact"
+                            />
+                            <img
+                                src="Photo/stamp@2x.png"
+                                alt="スタンプ"
+                                class="stamp"
+                                id="stamp"
+                            />
+                        </div>
+                    </div>
+                </a>
+            </section>
+            <section class="thankyou">
+                <div class="text-container">
+                    <span>T</span>
+                    <span>H</span>
+                    <span>A</span>
+                    <span>N</span>
+                    <span>K</span>
+                    <span>Y</span>
+                    <span>O</span>
+                    <span>U</span>
+                </div>
+            </section>
+
+            <footer class="footer-pc">
+                <div class="footer-inner">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#header">TOP</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="skills.html">SKILLS</a></li>
+                            <li><a href="works.html">WORKS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-right">
+                        <div class="finduson">
+                            <img src="Photo/FINDUSON@2x.png" alt="FINDUSON" />
+                        </div>
+                        <a
+                            href="https://www.instagram.com/mi.ll_design?igsh=MWFrcW43bm9heGhxdw&utm_source=qr"
+                        >
+                            <img
+                                src="Photo/instagram@2x.png"
+                                alt="Instagramアイコン"
+                                class="instaicon"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-left">© 2025 MILKY</div>
+            </footer>
+
+            <footer class="footer-sp">
+                <div class="footer-inner_sp">
+                    <nav class="footer_nav-sp">
+                        <ul>
+                            <li><a href="#header">TOP</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="skills.html">SKILLS</a></li>
+                            <li><a href="works.html">WORKS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-right_nav-sp">
+                        <div class="finduson">
+                            <img src="Photo/FINDUSON@2x.png" alt="FINDUSON" />
+                        </div>
+                        <a
+                            href="https://www.instagram.com/mi.ll_design?igsh=MWFrcW43bm9heGhxdw&utm_source=qr"
+                        >
+                            <img
+                                src="Photo/instagram@2x.png"
+                                alt="Instagramアイコン"
+                                class="instaicon"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-left_nav-sp">© 2025 MILKY</div>
+            </footer>
+        </main>
+
+        <script>
+            $(document).ready(function () {
+                $(".skills-slider").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: $(".custom-prev"),
+                    nextArrow: $(".custom-next"),
+                    infinite: true,
+                });
+            });
+        </script>
+
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "chk7drm",
+                        scriptTimeout: 10,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+
+        <script>
+            $("#hamburger").on("click", function () {
+                $(this).toggleClass("active");
+                $(".sp-nav").toggleClass("active");
+            });
+
+            $(".carousel_inner").slick({
+                autoplay: true,
+                adaptiveHeight: true,
+                prevArrow:
+                    '<img src="Photo/yazirushi3@2x.png" class="slide-arrow prev-arrow">',
+                nextArrow:
+                    '<img src="Photo/yazirushi4@2x.png" class="slide-arrow next-arrow">',
+                slidesToShow: 3,
+
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            prevArrow:
+                                '<img src="Photo/yazirushi3@2x.png" class="slide-arrow prev-arrow">',
+                            nextArrow:
+                                '<img src="Photo/yazirushi4@2x.png" class="slide-arrow next-arrow">',
+                        },
+                    },
+                ],
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+        <script>
+            function checkScroll() {
+                const images = document.querySelectorAll(".fade-in");
+
+                images.forEach((image) => {
+                    const rect = image.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        image.classList.add("show");
+                    }
+                });
+            }
+            window.addEventListener("load", checkScroll);
+            window.addEventListener("scroll", checkScroll);
+        </script>
+        <script src="script.js"></script>
+
+        <!-- 
+    <script>
+        $(function(){
+          $('.view_more_about_wrap').hover(
+            function() {
+              $(this).find('.view_more_yazirushi img').stop().animate({ marginLeft: '5px' }, 200);
+            },
+            function() {
+              $(this).find('.view_more_yazirushi img').stop().animate({ marginLeft: '0px' }, 200);
+            }
+          );
+        });
+        $(function(){
+          $('.view_more_skills').hover(
+            function() {
+              $(this).find('.view_more_yazirushi_skills img').stop().animate({ marginLeft: '5px' }, 200);
+            },
+            function() {
+              $(this).find('.view_more_yazirushi_skills img').stop().animate({ marginLeft: '0px' }, 200);
+            }
+          );
+        });
+        $(function(){
+          $('.view_more_works').hover(
+            function() {
+              $(this).find('.view_more_yazirushi_works img').stop().animate({ marginLeft: '5px' }, 200);
+            },
+            function() {
+              $(this).find('.view_more_yazirushi_works img').stop().animate({ marginLeft: '0px' }, 200);
+            }
+          );
+        });
+      </script> -->
+
+        <script>
+            $(function () {
+                var stampShown = false;
+
+                $(window).on("scroll", function () {
+                    var target = $(".postcard");
+
+                    if (!stampShown && isScrolledIntoView(target)) {
+                        stampShown = true;
+
+                        setTimeout(function () {
+                            $("#stamp").addClass("active");
+                        }, 300);
+                    }
+                });
+
+                function isScrolledIntoView(elem) {
+                    var docViewTop = $(window).scrollTop();
+                    var docViewBottom = docViewTop + $(window).height();
+
+                    var elemTop = $(elem).offset().top;
+                    var elemBottom = elemTop + $(elem).outerHeight();
+
+                    return elemBottom <= docViewBottom && elemTop >= docViewTop;
+                }
+            });
+        </script>
+    </body>
+</html>
