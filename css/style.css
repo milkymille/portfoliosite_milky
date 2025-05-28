@@ -2424,6 +2424,13 @@ button {
 
 }
 
+
+.stamp{
+
+  top: 0;
+  right: -20px;
+}
+
 }
 
 
@@ -2674,16 +2681,12 @@ button {
 .postcard{
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 80%;
   margin-left: 30px;
   margin-right: 30px;
 }
 
-.stamp{
-  max-width: 89px;
-  top: 0;
-  right: -20px;
-}
+
 
 .thankyou{
   margin-bottom: 113px;
