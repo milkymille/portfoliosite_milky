@@ -72,6 +72,7 @@
                         ターゲットに響くデザインを意識し、視認性とインパクトのあるグラフィックを提供し、伝えたいメッセージを視覚的に魅力的に表現します。
                     </p>
                 </div>
+
                 <div class="skills_viewmore">
                     <img src="Photo/SKillsviewmore@2x.png" alt="viewmore" />
                 </div>
@@ -388,6 +389,10 @@
                             .toggle();
                     }
                 });
+            });
+
+            $(".skills_viewmore").click(function () {
+                $(this).siblings(".accordion").trigger("click");
             });
         </script>
 
