@@ -142,10 +142,8 @@ body.fade-out {
     display: flex;
     gap: 50px;                
     justify-content: center;
-    position: fixed;
     z-index: 1000;
-    margin-right: 150px;
-    margin-top: 10px;
+ 
   }
   
   .pc-nav li {
@@ -170,6 +168,9 @@ body.fade-out {
     display: flex;
     gap: 50px;
     justify-content: center;
+    position: fixed;
+    right: 100px;
+    top: 10px;
 
   }
 
@@ -571,6 +572,7 @@ picture {
 
 .contact{
     margin-bottom: 274px;
+    overflow: hidden;
 }
     
    
@@ -2254,7 +2256,7 @@ button {
 .hamburger_wrap{
   position: fixed;
   z-index: 99999999 !important; 
-  top:20px;
+  top:30px;
   right: 30px;
   overflow: visible;
 }
@@ -2403,6 +2405,10 @@ button {
  opacity: 1;
 }
 
+.sp-nav.closing {
+  transform: translateX(100%);
+  opacity: 0;
+}
 
 .ham_insta{
   display: flex;

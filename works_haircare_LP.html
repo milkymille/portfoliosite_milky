@@ -18,17 +18,18 @@
     <body class="subpage">
         <header class="header" id="header">
             <div class="header-wrap">
-                <a href="index.html">
-                    <h1 class="logo_blue">
+                <h1 class="logo_blue">
+                    <a href="index.html">
                         <img
                             src="Photo/logo_blue.png"
-                            alt="Mill Designのロゴ"
-                        /></h1
-                ></a>
+                            alt="Mill Designのロゴ
+                        "
+                    /></a>
+                </h1>
                 <nav class="pc-nav">
                     <ul>
                         <li class="menu-item">
-                            <a href="index.html#CONCEPT">CONCEPT</a>
+                            <a href="#CONCEPT">CONCEPT</a>
                         </li>
                         <li class="menu-item">
                             <a href="about.html">ABOUT</a>
@@ -44,10 +45,17 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="hamburger">
-                    <span></span><span></span><span></span>
+            </div>
+            <div class="hamburger_wrap">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <nav class="sp-nav">
+            </div>
+
+            <nav class="sp-nav">
+                <div class="sp-nav_ham">
                     <ul>
                         <li><a href="index.html#CONCEPT">CONCEPT</a></li>
                         <li><a href="about.html">ABOUT</a></li>
@@ -55,8 +63,22 @@
                         <li><a href="works.html">WORKS</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+                <div class="ham_insta">
+                    <div class="finduson_ham">
+                        <img src="Photo/FINDUSON@2x.png" alt="FINDUSON" />
+                    </div>
+                    <a
+                        href="https://www.instagram.com/mi.ll_design?igsh=MWFrcW43bm9heGhxdw&utm_source=qr"
+                    >
+                        <div class="instaicon_ham">
+                            <img
+                                src="Photo/instagram_word@2x.png"
+                                alt="Instagramアイコン"
+                            /></div
+                    ></a>
+                </div>
+            </nav>
         </header>
         <section class="works2-1">
             <div class="title_wrapper">
@@ -325,11 +347,22 @@
         </script> -->
 
         <script>
-            $(document).ready(function () {
-                $(".hamburger").on("click", function () {
-                    $(this).toggleClass("active");
-                    $(".sp-nav").toggleClass("active");
-                });
+            $("#hamburger").on("click", function () {
+                const $nav = $(".sp-nav");
+                const $hamburger = $(this);
+
+                if ($nav.hasClass("active")) {
+                    $nav.addClass("closing");
+
+                    setTimeout(function () {
+                        $nav.removeClass("active closing");
+                    }, 500);
+
+                    $hamburger.removeClass("active");
+                } else {
+                    $nav.addClass("active");
+                    $hamburger.addClass("active");
+                }
             });
         </script>
         <script src="script.js"></script>

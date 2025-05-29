@@ -42,15 +42,15 @@
     <body>
         <header class="header" id="header">
             <div class="header-wrap">
-                <a href="#header">
-                    <h1 class="logo" id="TOP">
+                <h1 class="logo" id="TOP">
+                    <a href="#header">
                         <img
                             src="Photo/logo_white.png"
                             alt="Mill Designのロゴ"
                             class="pc"
-                        />
-                    </h1>
-                </a>
+                    /></a>
+                </h1>
+
                 <nav class="pc-nav">
                     <ul>
                         <li class="menu-item">
@@ -763,8 +763,21 @@
 
         <script>
             $("#hamburger").on("click", function () {
-                $(this).toggleClass("active");
-                $(".sp-nav").toggleClass("active");
+                const $nav = $(".sp-nav");
+                const $hamburger = $(this);
+
+                if ($nav.hasClass("active")) {
+                    $nav.addClass("closing");
+
+                    setTimeout(function () {
+                        $nav.removeClass("active closing");
+                    }, 500);
+
+                    $hamburger.removeClass("active");
+                } else {
+                    $nav.addClass("active");
+                    $hamburger.addClass("active");
+                }
             });
 
             $(".carousel_inner").slick({
