@@ -130,7 +130,7 @@ body.fade-out {
 }
 
 .logo {
-  top:40px;
+  top:20px;
   left:40px;
   max-width: 80px;
   position: fixed;
@@ -209,12 +209,16 @@ picture {
   position: absolute;  
   top: 50%;            
   left: 70%;           
-  transform: translate(-50%, -50%); /* 真ん中に寄せる */
+  transform: translate(-50%, -50%); 
   z-index: 2;          
-  color: white;       
-  font-size: 48px;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); 
+  width: 100%;
+  max-width: 600px; 
+  overflow: hidden;
+}
+
+.word img{
+  width: 100%;
 }
 
 .concept,
@@ -710,7 +714,7 @@ picture {
 
   
   .logo_blue {
-    top:40px;
+    top:20px;
     left:40px;
     position: fixed;
 }
@@ -2257,7 +2261,7 @@ button {
 .hamburger_wrap{
   position: fixed;
   z-index: 99999999 !important; 
-  top:30px;
+  top:20px;
   right: 30px;
   overflow: visible;
 }
@@ -2432,10 +2436,28 @@ button {
 }
 
 
+
+
+.word {
+  position: absolute;  
+  top: 50%;            
+  left: 70%;           
+  transform: translate(-50%, -50%); 
+  z-index: 2;          
+  text-align: center;
+  width: 100%;
+  max-width: 400px; 
+}
+
+.word img{
+  width: 100%;
+}
+
 .stamp{
 
   top: 0;
   right: -20px;
+  max-width: 100px;
 }
 
 }
@@ -2500,6 +2522,20 @@ button {
       text-align: left;
   }
   
+  .word {
+    position: absolute;  
+    top: 55%;            
+    left: 70%;           
+    transform: translate(-50%, -50%); 
+    z-index: 2;          
+    text-align: center;
+    width: 100%;
+    max-width: 200px; 
+  }
+  
+  .word img{
+    width: 100%;
+  }
   
  
   
@@ -2995,6 +3031,7 @@ button {
 
 .contact2{
   max-width: 100%;
+  padding: 8%;
 }
 
 .contact_warp{
